@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link, Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import home from './components/home/Home';
 import store from './components/store/Store'
 import about from './components/about/About';
 
-class Router extends Component {
-  render() {
-    return (
+
+  export default (
       <div>
-        <HashRouter>
-	        <div>
+        <Switch>
 	            <Route exact path="/" component={ home }/>
               <Route path="/store" component={ store }/>
 	            <Route path="/about" component={ about }/>
-	        </div>
-        </HashRouter>
+        </Switch>
       </div>
-    );
-  }
-}
+    )
 
-export default Router;
