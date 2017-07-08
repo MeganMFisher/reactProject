@@ -4,6 +4,17 @@ import ContactForm from './contactForm/ContactForm';
 import './about.css';
 
 class About extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            firstname: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            comment: '',
+        }
+    }
 
     render() {
         return(
