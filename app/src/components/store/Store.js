@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { getProducts } from '../../services/products'
+import { getProducts } from '../../services/products';
+import { Link } from 'react-router-dom';
+import Detail from './detail/Detail';
+
 import './store.css'
 
 class Store extends Component {
@@ -26,15 +29,15 @@ componentDidMount() {
         const products = this.state.products.map((product, i) => (
             <ul key={i} className='product'>
                 <h3>{ product.title}</h3>
+                <Link to={ `details/${product.id}` }>
                 <img src={ product.image } alt='clothing'/>
+                </Link>
             </ul>
         ))
 
         return(
             <div className='storeSection'>
-
                 { products }
-
             </div>
         )
     }
