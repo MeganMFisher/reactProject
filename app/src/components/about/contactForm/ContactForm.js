@@ -24,12 +24,12 @@ class ContactForm extends Component {
         formValues[name] = value;
 
         this.setState({ formValues })
-        addContact(this.state.formValues)
     }
 
     handleSubmit(event) {
         event.preventDefault();
         console.log(this.state.formValues);
+        addContact(this.state.formValues)
     }
 
         render(){
