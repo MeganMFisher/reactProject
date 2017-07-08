@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { addContact } from '../../../services/contact.js'
 import './contactForm.css';
 
 class ContactForm extends Component {
@@ -22,7 +23,8 @@ class ContactForm extends Component {
 
         formValues[name] = value;
 
-        this.setState({formValues})
+        this.setState({ formValues })
+        addContact(this.state.formValues)
     }
 
     handleSubmit(event) {
