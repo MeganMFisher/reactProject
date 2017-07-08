@@ -20,9 +20,7 @@ class ContactForm extends Component {
         let formValues = this.state.formValues;
         let name = event.target.name;
         let value = event.target.value;
-
         formValues[name] = value;
-
         this.setState({ formValues })
     }
 
@@ -30,6 +28,7 @@ class ContactForm extends Component {
         event.preventDefault();
         console.log(this.state.formValues);
         addContact(this.state.formValues)
+        this.setState({ formValues: {} })
     }
 
         render(){
@@ -37,16 +36,17 @@ class ContactForm extends Component {
             <div className='contactFormSection'>
                 <h1>Contact Us</h1>
                 <form onSubmit={ this.handleSubmit } className='contactUsBox'>
-
+                    <div>
                         <input type="text" name="firstname" placeholder="Firstname" value={this.state.formValues["firstname"]} onChange={ this.handleChange } />
 
                         <input type="text" name="lastname" placeholder="Lastname" value={this.state.formValues["lastname"]} onChange={ this.handleChange }/>
-
+                    </div>
+                    <div>
                         <input type="text" name="email" placeholder="Email Address" value={this.state.formValues["email"]} onChange={ this.handleChange } />
 
                         <input type="text" name="phone" placeholder="Phone Number" value={this.state.formValues["phone"]} onChange={ this.handleChange }/>
-
-                         <input type="text" name="comment" placeholder="Comment" value={this.state.formValues["comment"]} onChange={ this.handleChange }/>
+                    </div>
+                        <input type="text" name="comment" placeholder="Comment" value={this.state.formValues["comment"]} onChange={ this.handleChange }/>
 
                         <input className='button' type="submit" value="Submit" />
                 </form>
