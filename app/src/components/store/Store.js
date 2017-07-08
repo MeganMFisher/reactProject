@@ -5,7 +5,7 @@ class Store extends Component {
 
     render() {
         return(
-            <div>
+            <div className='storeSection'>
                 <h4>Store</h4>
             </div>
         )

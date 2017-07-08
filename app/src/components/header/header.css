@@ -16,5 +16,16 @@
 
 .links {
     text-decoration: none;
-    color: #999
+    color: #999;
+    font-size: 18px;
+    /*border: 2px solid transparent;*/
+    padding: 8px;
+    font-weight: bold;
+}
+
+.links:hover {
+    color: #111;
+    /*border: 2px solid #222;*/
+    background: #528da4;
+    border-radius: 2px;
 }

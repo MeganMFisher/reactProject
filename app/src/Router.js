@@ -6,12 +6,10 @@ import about from './components/about/About';
 
 
   export default (
-      <div>
         <Switch>
 	            <Route exact path="/" component={ home }/>
               <Route path="/store" component={ store }/>
 	            <Route path="/about" component={ about }/>
         </Switch>
-      </div>
-    )
+  )
 
