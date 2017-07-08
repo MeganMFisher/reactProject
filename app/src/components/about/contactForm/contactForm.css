@@ -29,7 +29,7 @@
     height: 40px;
 }
 
-.contactUsBox input:last-child {
+.contactUsBox input:nth-child(5) {
     width: 350px;
     height: 150px;
     resize: none;
@@ -45,7 +45,7 @@
     padding-top: 10px;*/
 }
 
-.contactFormSection button {
+.contactFormSection .button {
     margin-top: 20px;
     width: 250px;
     height: 55px;
