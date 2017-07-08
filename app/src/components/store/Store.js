@@ -31,14 +31,17 @@ componentDidMount() {
                 <Link to={ `detail/${product.id}` }>
                 <img src={ product.image } alt='clothing'/>
                 </Link>
+                <div></div>
                 <h3>{ product.title}</h3>
             </ul>
         ))
 
         return(
             <div className='storeSection'>
+            <div className='storeProducts'>
                 { products }
                 {/*<Detail />*/}
+            </div>
             </div>
         )
     }
