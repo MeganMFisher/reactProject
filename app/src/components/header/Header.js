@@ -7,7 +7,8 @@ class Header extends Component {
     render(){
         return (
             <div className='navBar'>
-                <div>
+                <div className='logo'></div>
+                <div className='linksBox'>
                     <Link to='/' className='links'>Home</Link>
                     <Link to='/store' className='links'>Store</Link>
                     <Link to='/about' className='links'>About</Link>

@@ -28,10 +28,10 @@ componentDidMount() {
 
         const products = this.state.products.map((product, i) => (
             <ul key={i} className='product'>
-                <h3>{ product.title}</h3>
                 <Link to={ `detail/${product.id}` }>
                 <img src={ product.image } alt='clothing'/>
                 </Link>
+                <h3>{ product.title}</h3>
             </ul>
         ))
 
