@@ -8,9 +8,9 @@ class Header extends Component {
         return (
             <div className='navBar'>
                 <div>
-                    <Link to='/'>Home</Link>
-                    <Link to='/store'>Store</Link>
-                    <Link to='/about'>About</Link>
+                    <Link to='/' className='links'>Home</Link>
+                    <Link to='/store' className='links'>Store</Link>
+                    <Link to='/about' className='links'>About</Link>
                 </div>
                 
             </div>
