@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './detail.css'
 
-class Detail extends Component {
-    render() {
-        return (
-            <h2>Details</h2>
-        )
-    }
+const productDetails = (props) => {
+    console.log('aawwwyeah!')
+    console.log(props.match.params.id)
 }
-
-export default Detail

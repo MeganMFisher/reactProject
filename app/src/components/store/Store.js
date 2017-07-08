@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getProducts } from '../../services/products';
 import { Link } from 'react-router-dom';
-import Detail from './detail/Detail';
+// import Detail from './detail/Detail';
 
 import './store.css'
 
@@ -29,7 +29,7 @@ componentDidMount() {
         const products = this.state.products.map((product, i) => (
             <ul key={i} className='product'>
                 <h3>{ product.title}</h3>
-                <Link to={ `details/${product.id}` }>
+                <Link to={ `detail/${product.id}` }>
                 <img src={ product.image } alt='clothing'/>
                 </Link>
             </ul>
@@ -38,6 +38,7 @@ componentDidMount() {
         return(
             <div className='storeSection'>
                 { products }
+                {/*<Detail />*/}
             </div>
         )
     }

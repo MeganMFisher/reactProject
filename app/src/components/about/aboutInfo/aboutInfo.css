@@ -1,0 +1,33 @@
+.aboutInfoSection {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(rgba(0,0,0, .8), rgba(0,0,0,.8)), url('https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAALOAAAAJDZlZDM3MGM0LWJkYjAtNDZhNy04MzNjLWI3Y2MwZWI4YTFhZQ.jpg') no-repeat center;
+    background-size: cover;*/
+}
+
+.aboutInfoBox {
+    width: 80%;
+    height: 60vh;
+    /*background: green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    /*color: white;*/
+}
+
+.aboutInfoBox h4 {
+    font-size: 28px;
+    letter-spacing: 8px;
+
+}
+
+.aboutInfoBox p {
+    padding: 20px;
+    text-align: justify;
+}

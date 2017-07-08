@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import AboutInfo from './aboutInfo/AboutInfo';
+import ContactForm from './contactForm/ContactForm';
 import './about.css';
 
 class About extends Component {
@@ -6,7 +8,8 @@ class About extends Component {
     render() {
         return(
             <div className='aboutSection'>
-                <h4>About</h4>
+                <AboutInfo />
+                <ContactForm />
             </div>
         )
     }
