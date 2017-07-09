@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import './detail.css'
+import React from 'react'
 
-const productDetails = (props) => {
-    console.log('aawwwyeah!')
-    console.log(props.match.params.id)
+export default function Detail (props) {
+    console.log('jheu')
+  return <h1>{props.match.params.id}</h1>
 }
