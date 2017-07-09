@@ -1,6 +1,19 @@
 import React from 'react'
+import { getProduct } from '../../../services/products';
+
 
 export default function Detail (props) {
-    console.log('jheu')
-  return <h1>{props.match.params.id}</h1>
+   const productId = props.match.params.id
+
+   getProduct(productId).then(res => {
+       return res 
+   })
+
+
+  return (
+    <div>
+        { productId }
+    </div>
+  )
 }
+
