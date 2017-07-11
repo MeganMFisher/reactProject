@@ -1,0 +1,25 @@
+.detailSection {
+    background: #f7f8fa;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #528da4;
+}
+
+.detailSection h2 {
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+.detailSection img {
+    width: 500px;
+    height: 500px;
+}
+
+.detailSection h4 {
+    margin-bottom: 40px;
+    padding-top: 5px;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { getProduct } from '../../../services/products';
+import './detail.css';
 
 
 
@@ -26,11 +27,11 @@ class Detail extends Component {
         const product = this.state.product;
 
         return(
-             <div>
+             <div className="detailSection">
                 <h2>{ product.title }</h2>
                 <img src={ product.image } alt='clothing'/>
                 <h3>{ product.desc }</h3>
-                <h4>${ product.price }</h4>
+                <h4>${ product.price }.00</h4>
             </div>
         )
     }
