@@ -18,7 +18,6 @@ class Detail extends Component {
       this.setState({
         product: product
       })
-      console.log(this.state.product)
     })
 
     }

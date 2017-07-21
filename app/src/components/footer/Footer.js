@@ -8,9 +8,11 @@ class Footer extends Component {
         return (
             <div className='footerSection'>
                 <div className='socialMediaBox'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div><i className="fa fa-twitter fa-2x" aria-hidden="true" ></i></div>
+                    <div><i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
+</div>
+                    <div><i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+</div>
                 </div>
             </div>
         )
