@@ -10,7 +10,7 @@ massive(config.database).then(db => {
     console.log(err)
 })
 
-var port = 3000;
+var port = 3000; 
 
 var app = express()
 app.use(bodyParser.json())
